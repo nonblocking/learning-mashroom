@@ -1,2 +1,3 @@
-# learning-mashroom
-Code of the Learning Mashroom Video series 
+# Learning Mashroom
+
+Code of the Learning Mashroom Video series
