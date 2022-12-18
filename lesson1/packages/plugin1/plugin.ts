@@ -1,24 +1,11 @@
 
-import express from 'express';
+import webapp from "./webapp";
 import type {MashroomWebAppPluginBootstrapFunction} from '@mashroom/mashroom/type-definitions';
 
 const bootstrap: MashroomWebAppPluginBootstrapFunction = async (pluginName, pluginConfig, contextHolder) => {
+    const {loggerFactory} = contextHolder.getPluginContext();
     const {name = 'World'} = pluginConfig;
-
-    const webapp = express();
-
-    webapp.get('/', (req, res) => {
-       res.type('text/html');
-       res.end(`
-        <html>
-            <body>
-                <h1>Hello ${name}</h1>
-            </body>
-        </html>
-       `);
-    });
-
-    return webapp;
+    return webapp(name);
 };
 
 export default bootstrap;
