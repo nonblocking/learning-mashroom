@@ -1,3 +1,12 @@
 {
-
+    "name": "learning-mashroom-leasson1",
+    "private": true,
+    "workspaces": ["./packages/*"],
+    "dependencies": {
+        "ts-node": "^10.9.1",
+        "@mashroom/mashroom": "^2.2.2"
+    },
+    "scripts": {
+        "start": "ts-node ./node_modules/.bin/mashroom"
+    }
 }

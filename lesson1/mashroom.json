@@ -1,0 +1,16 @@
+{
+    "$schema": "https://www.mashroom-server.com/schemas/mashroom-server-config.json",
+    "name": "Mashroom Server Lesson 1",
+    "port": 5050,
+    "pluginPackageFolders": [
+        {
+            "path": "packages",
+            "watch": true
+        }
+    ],
+    "plugins": {
+        "My Web-App": {
+            "name": "Internet"
+        }
+    }
+}
