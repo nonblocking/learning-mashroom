@@ -4,6 +4,9 @@
     "port": 5050,
     "pluginPackageFolders": [
         {
+            "path": "./node_modules/@mashroom"
+        },
+        {
             "path": "packages",
             "watch": true
         }

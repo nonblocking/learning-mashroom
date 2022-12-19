@@ -4,7 +4,7 @@
     "workspaces": ["./packages/*"],
     "dependencies": {
         "ts-node": "^10.9.1",
-        "@mashroom/mashroom": "^2.2.2"
+        "@mashroom/mashroom": "^2.2.3"
     },
     "scripts": {
         "start": "ts-node ./node_modules/.bin/mashroom"
