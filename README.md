@@ -1,6 +1,6 @@
 # Learning Mashroom
 
-Code of the Learning Mashroom Video series.
+Source code from the Learning Mashroom Video series.
 
 ## Parts
 
