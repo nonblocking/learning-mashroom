@@ -4,7 +4,9 @@ import type {MashroomWebAppPluginBootstrapFunction} from '@mashroom/mashroom/typ
 
 const bootstrap: MashroomWebAppPluginBootstrapFunction = async (pluginName, pluginConfig, contextHolder) => {
     const {loggerFactory} = contextHolder.getPluginContext();
-    const {name = 'World'} = pluginConfig;
+    const logger = loggerFactory('my.category');
+    const {name} = pluginConfig;
+    logger.info('Starting web-app plugin');
     return webapp(name);
 };
 
