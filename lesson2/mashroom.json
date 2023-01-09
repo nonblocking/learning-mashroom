@@ -1,6 +1,6 @@
 {
     "$schema": "https://www.mashroom-server.com/schemas/mashroom-server-config.json",
-    "name": "Mashroom Server Lesson 1",
+    "name": "Mashroom Server Lesson 2",
     "port": 8080,
     "pluginPackageFolders": [
         {
