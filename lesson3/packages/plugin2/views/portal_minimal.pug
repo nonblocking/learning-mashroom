@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        title #{site.title} - #{page.title}
+        != portalResourcesHeader
+    body
+        h1 My Theme
+
+        main!= pageContent
+
+        != portalResourcesFooter

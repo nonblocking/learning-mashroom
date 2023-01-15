@@ -1,0 +1,19 @@
+
+@use "../node_modules/bootstrap/scss/bootstrap";
+
+h1 {
+    padding: 10px;
+}
+
+main {
+    padding: 0 10px;
+}
+
+.mashroom-portal-app-wrapper {
+
+    .mashroom-portal-app-header {
+        display: none;
+    }
+}
+
+

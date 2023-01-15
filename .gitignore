@@ -2,7 +2,6 @@
 node_modules/
 dist/
 
-data
 .idea
 *.iml
 *.log
@@ -10,3 +9,11 @@ log
 .vscode
 .DS_Store
 lerna-debug.log
+
+lesson1/data
+lesson2/data
+lesson3/packages/plugin2/public/*.css*
+
+
+
+

@@ -6,4 +6,5 @@ Source code from the Learning Mashroom Video series.
 
  * [Lesson 1: Server Setup and first Plugin](lesson1)
  * [Lesson 2: Security, Session, Monitoring](lesson2)
+ * [Lesson 3: The Portal](lesson3)
 

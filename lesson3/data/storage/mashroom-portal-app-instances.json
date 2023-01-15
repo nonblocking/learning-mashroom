@@ -1,0 +1,86 @@
+{
+  "d": [
+    {
+      "pluginName": "Mashroom Welcome Portal App",
+      "instanceId": "0ZB5IMZe",
+      "_id": "Vkhq5-Rq"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo React App 2",
+      "instanceId": "Lw1IJ4NC",
+      "appConfig": {},
+      "_id": "GdA6ien7"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo React App",
+      "instanceId": "S3avSJLd",
+      "appConfig": {
+        "message": "This simple React based SPA was launched with a different..."
+      },
+      "_id": "78X2wpGT"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo React App",
+      "instanceId": "INGh1OKo",
+      "appConfig": {
+        "message": "...configuration than this instance of the same SPA"
+      },
+      "_id": "HZPGd0Ld"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo React App",
+      "instanceId": "9xQujFPW",
+      "appConfig": {
+        "message": "This React SPA is part of a tabbed container formed by the Mashroom Portal Tabify App"
+      },
+      "_id": "8WD5n-mX"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Angular App",
+      "instanceId": "wSbeimsq",
+      "appConfig": {},
+      "_id": "CCOg9RvW"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Composite App",
+      "instanceId": "DJi2TR1I",
+      "appConfig": {},
+      "_id": "sLRVGdDH"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Load Dynamically App",
+      "instanceId": "zXuXwR9g",
+      "_id": "_YvGwL9W"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Rest Proxy App",
+      "instanceId": "n92XKglY",
+      "_id": "iu22Z7jR"
+    },
+    {
+      "pluginName": "Mashroom Portal Tabify App",
+      "instanceId": "H61ioVPI",
+      "_id": "qeG_-6Zf"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Hybrid Rendering Remote App",
+      "instanceId": "ivdz0S5I",
+      "appConfig": {},
+      "_id": "NX4xISJY"
+    },
+    {
+      "pluginName": "Mashroom Sandbox App",
+      "instanceId": "lfu2z3R3",
+      "_id": "L79TXEIa"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Vue App",
+      "instanceId": "BCCfKN9i",
+      "appConfig": {
+        "message": "This is simple Vue based SPA that communicates with other Apps on the page via message bus",
+        "pingButtonLabel": "Send Ping"
+      },
+      "_id": "2aaycLwd"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "plugins2",
+    "version": "1.0.0",
+    "dependencies": {
+        "pug": "^3.0.2"
+    },
+    "devDependencies": {
+        "sass": "^1.57.1",
+        "bootstrap": "^5.2.3"
+    },
+    "scripts": {
+        "build": "sass --load-path=.. src/style.scss:public/style.css src/admin.scss:public/admin.css"
+    }
+}

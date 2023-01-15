@@ -1,0 +1,362 @@
+
+@use "sass:math";
+
+$COLOR_BLACK: #343633;
+$COLOR_WHITE: white;
+$COLOR_GREY: #888;
+$COLOR_GREY_LIGHT: #999;
+$COLOR_ERROR: red;
+
+$COLOR_PRIMARY: #253C78;
+$COLOR_PRIMARY_LIGHT: #7482A9;
+$COLOR_PRIMARY_DARK: #18274D;
+$COLOR_PRIMARY_EXTRA_LIGHT: lighten($COLOR_PRIMARY_LIGHT, 25);
+
+$COLOR_SECONDARY: #79AEA3;
+$COLOR_SECONDARY_LIGHT: #A9CBC4;
+$COLOR_SECONDARY_DARK: #4E6F68;
+
+$ADMIN_APP_COLOR_BACKGROUND: $COLOR_BLACK;
+$ADMIN_APP_COLOR_BACKGROUND_LIGHT: lighten($ADMIN_APP_COLOR_BACKGROUND, 10);
+$ADMIN_APP_COLOR_BACKGROUND_LIGHTER: lighten($ADMIN_APP_COLOR_BACKGROUND, 20);
+$ADMIN_APP_COLOR_TEXT: white;
+$ADMIN_APP_COLOR_TEXT_DARK: lighten($ADMIN_APP_COLOR_BACKGROUND, 60);
+$ADMIN_APP_COLOR_INPUT_BACKGROUND: #0d1117;
+
+$FONT_DEFAULT: Arial, sans-serif;
+$FONT_HEADER: Georgia, serif;
+$FONT_ICON: 'Font Awesome 6 Free';
+
+$GUTTER_WIDTH: 15px;
+
+@mixin hover-animation() {
+    transition: color 500ms ease-out, background-color 500ms ease-out;
+}
+
+@mixin focus-animation() {
+    transition: color 500ms ease-out, border-color 500ms ease-out;
+}
+
+.mashroom-portal-ui-error-message {
+    color: $COLOR_ERROR;
+}
+
+#mashroom-portal-admin-app-container {
+    background-color: $COLOR_BLACK;
+    height: 32px;
+
+    .mashroom-portal-app-wrapper {
+        min-height: 32px;
+        margin: 0;
+
+        .mashroom-portal-app-header {
+            display: none !important;
+        }
+    }
+
+    .mashroom-portal-app-loading {
+        min-height: 32px;
+
+        span {
+            display: none;
+        }
+    }
+}
+
+.mashroom-portal-admin-app {
+    background-color: $ADMIN_APP_COLOR_BACKGROUND;
+    color: $ADMIN_APP_COLOR_TEXT;
+
+    .menu-bar {
+        background-color: $ADMIN_APP_COLOR_BACKGROUND;
+    }
+
+    .available-apps-panel {
+
+        .available-app {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHT;
+            margin-bottom: 2px;
+
+            &:hover {
+                background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+            }
+
+            .filter-match {
+                color: $COLOR_SECONDARY;
+            }
+        }
+    }
+
+    .dropdown-menu-button {
+        &:hover {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHT;
+        }
+    }
+
+    .portal-apps-control-toggle {
+        &:hover {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHT;
+        }
+    }
+
+    a, a:visited, a:focus {
+        color: $ADMIN_APP_COLOR_TEXT;
+        text-decoration: none;
+        @include hover-animation();
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    table {
+        color: $ADMIN_APP_COLOR_TEXT;
+        border-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER !important;
+
+        tr {
+            border-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER !important;
+
+            &:nth-child(odd) {
+                background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHT;
+            }
+        }
+
+        th {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+            border-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHT !important;
+        }
+
+        td {
+            text-align: center;
+            border-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER !important;
+
+            &:first-child {
+                text-align: left;
+            }
+        }
+    }
+
+    .mashroom-portal-checkbox {
+        & + label {
+            &:before {
+                color: $ADMIN_APP_COLOR_TEXT_DARK;
+            }
+        }
+
+        &:focus + label {
+            &:before {
+
+            }
+        }
+    }
+
+    .mashroom-portal-radio {
+        & + label {
+            &:before {
+                color: $ADMIN_APP_COLOR_TEXT_DARK;
+            }
+        }
+
+        &:focus + label {
+            &:before {
+
+            }
+        }
+    }
+
+    input[type="text"], input[type="number"], input[type="password"], input[type="tel"], input[type="search"], textarea {
+        background-color: $ADMIN_APP_COLOR_INPUT_BACKGROUND;
+        border-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+        color: $ADMIN_APP_COLOR_TEXT;
+
+        &:focus {
+            border-color: $COLOR_SECONDARY;
+        }
+    }
+
+    select {
+        background-color: $ADMIN_APP_COLOR_INPUT_BACKGROUND;
+        border-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+        color: $ADMIN_APP_COLOR_TEXT;
+
+        option {
+            color: $ADMIN_APP_COLOR_TEXT;
+            background-color: $ADMIN_APP_COLOR_INPUT_BACKGROUND;
+        }
+
+        &:focus {
+            border-color: $COLOR_SECONDARY;
+        }
+    }
+
+    button {
+        background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+        border: 1px solid transparent;
+        color: $ADMIN_APP_COLOR_TEXT;
+
+        &.secondary {
+            background-color: transparent;
+            border-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+
+            &:hover, &:active {
+                color: $ADMIN_APP_COLOR_TEXT;
+            }
+
+            &[disabled] {
+                &:hover, &:active {
+                    color: $COLOR_GREY;
+                    border-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+                    background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHT;
+        }
+
+        &[disabled] {
+            color: $COLOR_GREY;
+            background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+
+            &:hover, &:active {
+                background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+            }
+        }
+
+        &:focus {
+            border-color: $COLOR_SECONDARY;
+        }
+    }
+
+    .mashroom-portal-ui-field-label {
+        color: $ADMIN_APP_COLOR_TEXT_DARK;
+
+    }
+
+    .mashroom-portal-ui-source-code-editor-field {
+        .cm-editor {
+            border-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+
+            &.cm-focused {
+                border-color: $COLOR_SECONDARY;
+            }
+        }
+    }
+
+    .mashroom-portal-ui-dropdown-menu {
+        background-color: $ADMIN_APP_COLOR_BACKGROUND;
+        color: $ADMIN_APP_COLOR_TEXT;
+
+        .dropdown-menu-content {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND;
+            color: $ADMIN_APP_COLOR_TEXT;
+            border: 1px solid #555;
+        }
+
+        .mashroom-portal-ui-dropdown-menu-item {
+            &:hover {
+                background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+            }
+        }
+    }
+
+    .mashroom-portal-ui-modal {
+        .mashroom-portal-ui-modal-wrapper {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND;
+            color: $ADMIN_APP_COLOR_TEXT;
+        }
+
+        .mashroom-portal-ui-modal-header {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHT;
+        }
+
+        .mashroom-portal-ui-modal-content {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND;
+        }
+    }
+
+    .mashroom-portal-autocomplete-field {
+        .suggestions-container-open {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND;
+
+            li:nth-child(even) {
+
+            }
+        }
+
+        .suggestion-highlighted {
+            background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER !important;
+        }
+    }
+}
+
+.mashroom-portal-admin-app-controls {
+    .tool-button {
+        color: $ADMIN_APP_COLOR_TEXT;
+        background-color: $ADMIN_APP_COLOR_BACKGROUND;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.mashroom-portal-admin-drag-ghost {
+    color: $COLOR_WHITE;
+    background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHT;
+}
+
+.mashroom-portal-ui-tab-dialog {
+    .tab-dialog-header {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid $COLOR_PRIMARY;
+
+        .tab-dialog-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            color: $COLOR_WHITE;
+            background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHTER;
+            margin-left: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            @include hover-animation();
+
+
+            &:hover {
+                background-color: $ADMIN_APP_COLOR_BACKGROUND_LIGHT;
+            }
+
+            &.active {
+                background-color: $COLOR_PRIMARY;
+                margin-top: 1px;
+                margin-bottom: 0;
+                cursor: default;
+            }
+
+            .title {
+                padding: 4px 15px;
+                font-size: 0.9em;
+                font-weight: 500;
+            }
+
+            .close-button {
+                cursor: pointer;
+
+                &:after {
+                    content: '\f00d';
+                    font-family: $FONT_ICON;
+                    font-weight: 900;
+                    padding: 2px 15px;
+                }
+            }
+        }
+    }
+}
