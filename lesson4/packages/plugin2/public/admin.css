@@ -1,0 +1,226 @@
+.mashroom-portal-ui-error-message {
+  color: red;
+}
+
+#mashroom-portal-admin-app-container {
+  background-color: #343633;
+  height: 32px;
+}
+#mashroom-portal-admin-app-container .mashroom-portal-app-wrapper {
+  min-height: 32px;
+  margin: 0;
+}
+#mashroom-portal-admin-app-container .mashroom-portal-app-wrapper .mashroom-portal-app-header {
+  display: none !important;
+}
+#mashroom-portal-admin-app-container .mashroom-portal-app-loading {
+  min-height: 32px;
+}
+#mashroom-portal-admin-app-container .mashroom-portal-app-loading span {
+  display: none;
+}
+
+.mashroom-portal-admin-app {
+  background-color: #343633;
+  color: white;
+}
+.mashroom-portal-admin-app .menu-bar {
+  background-color: #343633;
+}
+.mashroom-portal-admin-app .available-apps-panel .available-app {
+  background-color: #4d504c;
+  margin-bottom: 2px;
+}
+.mashroom-portal-admin-app .available-apps-panel .available-app:hover {
+  background-color: #676a65;
+}
+.mashroom-portal-admin-app .available-apps-panel .available-app .filter-match {
+  color: #79AEA3;
+}
+.mashroom-portal-admin-app .dropdown-menu-button:hover {
+  background-color: #4d504c;
+}
+.mashroom-portal-admin-app .portal-apps-control-toggle:hover {
+  background-color: #4d504c;
+}
+.mashroom-portal-admin-app a, .mashroom-portal-admin-app a:visited, .mashroom-portal-admin-app a:focus {
+  color: white;
+  text-decoration: none;
+  transition: color 500ms ease-out, background-color 500ms ease-out;
+}
+.mashroom-portal-admin-app a:hover, .mashroom-portal-admin-app a:visited:hover, .mashroom-portal-admin-app a:focus:hover {
+  text-decoration: underline;
+}
+.mashroom-portal-admin-app a:active, .mashroom-portal-admin-app a:visited:active, .mashroom-portal-admin-app a:focus:active {
+  text-decoration: underline;
+}
+.mashroom-portal-admin-app table {
+  color: white;
+  border-color: #676a65 !important;
+}
+.mashroom-portal-admin-app table tr {
+  border-color: #676a65 !important;
+}
+.mashroom-portal-admin-app table tr:nth-child(odd) {
+  background-color: #4d504c;
+}
+.mashroom-portal-admin-app table th {
+  background-color: #676a65;
+  border-color: #4d504c !important;
+}
+.mashroom-portal-admin-app table td {
+  text-align: center;
+  border-color: #676a65 !important;
+}
+.mashroom-portal-admin-app table td:first-child {
+  text-align: left;
+}
+.mashroom-portal-admin-app .mashroom-portal-checkbox + label:before {
+  color: #cdcfcc;
+}
+.mashroom-portal-admin-app .mashroom-portal-radio + label:before {
+  color: #cdcfcc;
+}
+.mashroom-portal-admin-app input[type=text], .mashroom-portal-admin-app input[type=number], .mashroom-portal-admin-app input[type=password], .mashroom-portal-admin-app input[type=tel], .mashroom-portal-admin-app input[type=search], .mashroom-portal-admin-app textarea {
+  background-color: #0d1117;
+  border-color: #676a65;
+  color: white;
+}
+.mashroom-portal-admin-app input[type=text]:focus, .mashroom-portal-admin-app input[type=number]:focus, .mashroom-portal-admin-app input[type=password]:focus, .mashroom-portal-admin-app input[type=tel]:focus, .mashroom-portal-admin-app input[type=search]:focus, .mashroom-portal-admin-app textarea:focus {
+  border-color: #79AEA3;
+}
+.mashroom-portal-admin-app select {
+  background-color: #0d1117;
+  border-color: #676a65;
+  color: white;
+}
+.mashroom-portal-admin-app select option {
+  color: white;
+  background-color: #0d1117;
+}
+.mashroom-portal-admin-app select:focus {
+  border-color: #79AEA3;
+}
+.mashroom-portal-admin-app button {
+  background-color: #676a65;
+  border: 1px solid transparent;
+  color: white;
+}
+.mashroom-portal-admin-app button.secondary {
+  background-color: transparent;
+  border-color: #676a65;
+}
+.mashroom-portal-admin-app button.secondary:hover, .mashroom-portal-admin-app button.secondary:active {
+  color: white;
+}
+.mashroom-portal-admin-app button.secondary[disabled]:hover, .mashroom-portal-admin-app button.secondary[disabled]:active {
+  color: #888;
+  border-color: #676a65;
+  background-color: #676a65;
+}
+.mashroom-portal-admin-app button:hover {
+  background-color: #4d504c;
+}
+.mashroom-portal-admin-app button[disabled] {
+  color: #888;
+  background-color: #676a65;
+}
+.mashroom-portal-admin-app button[disabled]:hover, .mashroom-portal-admin-app button[disabled]:active {
+  background-color: #676a65;
+}
+.mashroom-portal-admin-app button:focus {
+  border-color: #79AEA3;
+}
+.mashroom-portal-admin-app .mashroom-portal-ui-field-label {
+  color: #cdcfcc;
+}
+.mashroom-portal-admin-app .mashroom-portal-ui-source-code-editor-field .cm-editor {
+  border-color: #676a65;
+}
+.mashroom-portal-admin-app .mashroom-portal-ui-source-code-editor-field .cm-editor.cm-focused {
+  border-color: #79AEA3;
+}
+.mashroom-portal-admin-app .mashroom-portal-ui-dropdown-menu {
+  background-color: #343633;
+  color: white;
+}
+.mashroom-portal-admin-app .mashroom-portal-ui-dropdown-menu .dropdown-menu-content {
+  background-color: #343633;
+  color: white;
+  border: 1px solid #555;
+}
+.mashroom-portal-admin-app .mashroom-portal-ui-dropdown-menu .mashroom-portal-ui-dropdown-menu-item:hover {
+  background-color: #676a65;
+}
+.mashroom-portal-admin-app .mashroom-portal-ui-modal .mashroom-portal-ui-modal-wrapper {
+  background-color: #343633;
+  color: white;
+}
+.mashroom-portal-admin-app .mashroom-portal-ui-modal .mashroom-portal-ui-modal-header {
+  background-color: #4d504c;
+}
+.mashroom-portal-admin-app .mashroom-portal-ui-modal .mashroom-portal-ui-modal-content {
+  background-color: #343633;
+}
+.mashroom-portal-admin-app .mashroom-portal-autocomplete-field .suggestions-container-open {
+  background-color: #343633;
+}
+.mashroom-portal-admin-app .mashroom-portal-autocomplete-field .suggestion-highlighted {
+  background-color: #676a65 !important;
+}
+
+.mashroom-portal-admin-app-controls .tool-button {
+  color: white;
+  background-color: #343633;
+  opacity: 0.7;
+}
+.mashroom-portal-admin-app-controls .tool-button:hover {
+  opacity: 1;
+}
+
+.mashroom-portal-admin-drag-ghost {
+  color: white;
+  background-color: #4d504c;
+}
+
+.mashroom-portal-ui-tab-dialog .tab-dialog-header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #253C78;
+}
+.mashroom-portal-ui-tab-dialog .tab-dialog-header .tab-dialog-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #676a65;
+  margin-left: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  transition: color 500ms ease-out, background-color 500ms ease-out;
+}
+.mashroom-portal-ui-tab-dialog .tab-dialog-header .tab-dialog-button:hover {
+  background-color: #4d504c;
+}
+.mashroom-portal-ui-tab-dialog .tab-dialog-header .tab-dialog-button.active {
+  background-color: #253C78;
+  margin-top: 1px;
+  margin-bottom: 0;
+  cursor: default;
+}
+.mashroom-portal-ui-tab-dialog .tab-dialog-header .tab-dialog-button .title {
+  padding: 4px 15px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.mashroom-portal-ui-tab-dialog .tab-dialog-header .tab-dialog-button .close-button {
+  cursor: pointer;
+}
+.mashroom-portal-ui-tab-dialog .tab-dialog-header .tab-dialog-button .close-button:after {
+  content: "\f00d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding: 2px 15px;
+}
+
+/*# sourceMappingURL=admin.css.map */

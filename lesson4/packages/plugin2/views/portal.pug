@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title #{site.title} - #{page.title}
+        != portalResourcesHeader
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css")
+        link(rel="stylesheet", href=`${resourcesBasePath}/style.css`)
+        if user.admin
+            link(rel="stylesheet", href=`${resourcesBasePath}/admin.css`)
+    body
+        div#mashroom-portal-admin-app-container
+
+        h1 My Theme
+
+        main!= pageContent
+
+        != portalResourcesFooter

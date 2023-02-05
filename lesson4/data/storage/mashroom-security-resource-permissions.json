@@ -1,0 +1,16 @@
+{
+  "d": [
+    {
+      "type": "Portal-App",
+      "key": "My first App_6zWJhT9I",
+      "permissions": null,
+      "_id": "GprjT18w"
+    },
+    {
+      "type": "Portal-App",
+      "key": "My first App_w7NRscpn",
+      "permissions": null,
+      "_id": "HPiAUz0E"
+    }
+  ]
+}

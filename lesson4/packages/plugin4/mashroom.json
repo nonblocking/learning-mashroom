@@ -1,0 +1,36 @@
+{
+    "$schema": "https://www.mashroom-server.com/schemas/mashroom-plugins.json",
+    "devModeBuildScript": "build",
+    "plugins": [
+        {
+            "name": "My first App",
+            "type": "portal-app2",
+            "clientBootstrap": "startMyFirstApp",
+            "resources": {
+                "js": [
+                    "static/js/main.js"
+                ],
+                "css": [
+                    "static/css/main.css"
+                ]
+            },
+            "local": {
+                "resourcesRoot": "./build"
+            },
+            "defaultConfig": {
+                "category": "my-category",
+                "rolePermissions": {
+                    "hideLearnReact": ["Administrator"]
+                },
+                "proxies": {
+                    "spaceFlightNewsAPI": {
+                        "targetUri": "https://api.spaceflightnewsapi.net/v3/blogs"
+                    }
+                },
+                "appConfig": {
+                    "greeting": "Welcome"
+                }
+            }
+        }
+    ]
+}

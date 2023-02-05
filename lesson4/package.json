@@ -1,0 +1,35 @@
+{
+    "name": "learning-mashroom-leasson4",
+    "private": true,
+    "workspaces": ["./packages/*"],
+    "dependencies": {
+        "ts-node": "^10.9.1",
+        "@mashroom/mashroom": "^2.2.3",
+        "@mashroom/mashroom-docs-static": "^2.2.3",
+        "@mashroom/mashroom-security": "^2.2.3",
+        "@mashroom/mashroom-security-provider-simple": "^2.2.3",
+        "@mashroom/mashroom-security-default-login-webapp": "^2.2.3",
+        "@mashroom/mashroom-storage": "^2.2.3",
+        "@mashroom/mashroom-storage-provider-filestore": "^2.2.3",
+        "@mashroom/mashroom-session": "^2.2.3",
+        "@mashroom/mashroom-i18n": "^2.2.3",
+        "@mashroom/mashroom-browser-cache": "^2.2.3",
+        "@mashroom/mashroom-monitoring-metrics-collector": "^2.2.3",
+        "@mashroom/mashroom-monitoring-prometheus-exporter": "^2.2.3",
+
+        "@mashroom/mashroom-http-proxy": "^2.2.3",
+
+        "@mashroom/mashroom-portal": "^2.2.3",
+        "@mashroom/mashroom-portal-admin-app": "^2.2.3",
+        "@mashroom/mashroom-portal-default-layouts": "^2.2.3",
+        "@mashroom/mashroom-portal-default-theme": "^2.2.3",
+        "@mashroom/mashroom-portal-sandbox-app": "^2.2.3",
+
+        "@mashroom/mashroom-portal-demo-angular-app": "^2.2.3",
+        "@mashroom/mashroom-portal-demo-react-app2": "^2.2.3",
+        "@mashroom/mashroom-portal-demo-vue-app": "^2.2.3"
+    },
+    "scripts": {
+        "start": "ts-node ./node_modules/.bin/mashroom"
+    }
+}

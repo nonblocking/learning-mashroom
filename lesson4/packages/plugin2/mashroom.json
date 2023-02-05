@@ -1,0 +1,13 @@
+{
+    "$schema": "https://www.mashroom-server.com/schemas/mashroom-plugins.json",
+    "devModeBuildScript": "build",
+    "plugins": [
+        {
+            "name": "My Portal Theme",
+            "type": "portal-theme",
+            "bootstrap": "./bootstrap.ts",
+            "resourcesRoot": "./public",
+            "views": "./views"
+        }
+    ]
+}
