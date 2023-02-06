@@ -1,5 +1,15 @@
 {
     "appenders": {
+        "file": {
+            "type": "file",
+            "filename": "log/mashroom.log",
+            "maxLogSize": 10485760,
+            "backups": 3,
+            "layout": {
+                "type": "pattern",
+                "pattern": "%d %p %X{clientIP} %X{username} %c - %m"
+            }
+        },
         "console": {
             "type": "console",
             "layout": {
@@ -10,6 +20,7 @@
     "categories": {
         "default": {
             "appenders": [
+                "file",
                 "console"
             ],
             "level": "debug"
