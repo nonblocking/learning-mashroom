@@ -13,7 +13,9 @@ lerna-debug.log
 lesson1/data
 lesson2/data
 lesson3/packages/plugin2/public/*.css*
+lesson4/packages/plugin2/public/*.css*
 lesson4/packages/plugin4/build
+
 
 
 
