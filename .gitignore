@@ -15,6 +15,8 @@ lesson2/data
 lesson3/packages/plugin2/public/*.css*
 lesson4/packages/plugin2/public/*.css*
 lesson4/packages/plugin4/build
+lesson5/packages/plugin2/public/*.css*
+lesson5/packages/plugin4/build
 
 
 

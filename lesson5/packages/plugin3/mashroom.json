@@ -1,0 +1,12 @@
+{
+    "$schema": "https://www.mashroom-server.com/schemas/mashroom-plugins.json",
+    "plugins": [
+        {
+            "name": "My Portal Layouts",
+            "type": "portal-layouts",
+            "layouts": {
+                "3 column layout": "./3columns.html"
+            }
+        }
+    ]
+}

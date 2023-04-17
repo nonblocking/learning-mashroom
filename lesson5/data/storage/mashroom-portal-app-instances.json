@@ -1,0 +1,81 @@
+{
+  "d": [
+    {
+      "pluginName": "Mashroom Welcome Portal App",
+      "instanceId": "fDiHqZZm",
+      "_id": "bUDyoXXa"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo React App",
+      "instanceId": "9UnvarnV",
+      "appConfig": {
+        "message": "This simple React based SPA was launched with a different..."
+      },
+      "_id": "aIm5JF8f"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo React App",
+      "instanceId": "Ha6AWAjh",
+      "appConfig": {
+        "message": "...configuration than this instance of the same SPA"
+      },
+      "_id": "oJMKLbah"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo React App",
+      "instanceId": "r-eyfKjz",
+      "appConfig": {
+        "message": "This React SPA is part of a tabbed container formed by the Mashroom Portal Tabify App"
+      },
+      "_id": "6BP7Q03j"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Composite App",
+      "instanceId": "OE26HoqD",
+      "appConfig": {},
+      "_id": "67q0MdMn"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Load Dynamically App",
+      "instanceId": "3q0H5S9_",
+      "_id": "_t4n04aM"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Rest Proxy App",
+      "instanceId": "dn40sgJb",
+      "_id": "wbeib-ag"
+    },
+    {
+      "pluginName": "Mashroom Portal Tabify App",
+      "instanceId": "9yzYF-Sn",
+      "_id": "fPaVtP3t"
+    },
+    {
+      "pluginName": "Mashroom Portal Demo Hybrid Rendering Remote App",
+      "instanceId": "1cnDdZb6",
+      "appConfig": {},
+      "_id": "P9L6-XtW"
+    },
+    {
+      "pluginName": "Mashroom Sandbox App",
+      "instanceId": "-Y0_4zGH",
+      "_id": "bsLANmPd"
+    },
+    {
+      "pluginName": "My first App",
+      "instanceId": "6zWJhT9I",
+      "appConfig": {
+        "greeting": "Welcome"
+      },
+      "_id": "-kqSlhmi"
+    },
+    {
+      "pluginName": "My first App",
+      "instanceId": "w7NRscpn",
+      "appConfig": {
+        "greeting": "Hi"
+      },
+      "_id": "ptzxRtdy"
+    }
+  ]
+}

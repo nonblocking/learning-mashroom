@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.App-logo svg {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--mashroom-portal-color-background, #282c34);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--mashroom-portal-color-black, white);
+}
+
+.App-link {
+  color: var(--mashroom-portal-color-primary, #61dafb);
+}
+
+.news a {
+    color: var(--mashroom-portal-color-primary, #61dafb);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

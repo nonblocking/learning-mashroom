@@ -1,0 +1,57 @@
+{
+    "$schema": "https://www.mashroom-server.com/schemas/mashroom-server-config.json",
+    "name": "Mashroom Server Lesson 5",
+    "port": 8080,
+    "indexPage": "/portal",
+    "pluginPackageFolders": [
+        {
+            "path": "./node_modules/@mashroom"
+        },
+        {
+            "path": "packages",
+            "devMode": true
+        }
+    ],
+    "ignorePlugins": [
+        "Mashroom LDAP Security Provider",
+        "Mashroom Session Redis Provider"
+    ],
+    "plugins": {
+        "My Web-App": {
+            "name": "Everyone"
+        },
+        "Mashroom Security Services": {
+            "provider": "Mashroom Security Simple Provider",
+            "acl": "./acl.json"
+        },
+        "Mashroom Security Simple Provider": {
+            "users": "./users.json",
+            "loginPage": "/login"
+        },
+        "Mashroom Security Default Login Webapp": {
+            "path": "/login"
+        },
+        "Mashroom Session Middleware": {
+            "provider": "memory",
+            "session": {
+                "cookie": {
+                    "maxAge": 1800000
+                }
+            }
+        },
+        "Mashroom Storage Services": {
+            "provider": "Mashroom Storage Filestore Provider"
+        },
+        "Mashroom Storage Filestore Provider": {
+            "dataFolder": "./data/storage"
+        },
+
+        "Mashroom Portal WebApp": {
+            "adminApp": "Mashroom Portal Admin App",
+            "defaultTheme": "Mashroom Portal Default Theme"
+        },
+        "Mashroom Portal Default Theme": {
+            "showEnvAndVersions": true
+        }
+    }
+}

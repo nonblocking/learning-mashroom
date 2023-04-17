@@ -1,0 +1,24 @@
+{
+    "$schema": "https://www.mashroom-server.com/schemas/mashroom-security-acl.json",
+    "/webapp1": {
+        "*": {
+            "allow": {
+                "roles": ["Authenticated"]
+            }
+        }
+    },
+    "/portal/**": {
+        "*": {
+            "allow": {
+                "roles": ["Authenticated"]
+            }
+        }
+    },
+    "/mashroom/**": {
+        "*": {
+            "allow": {
+                "roles": ["Administrator"]
+            }
+        }
+    }
+}

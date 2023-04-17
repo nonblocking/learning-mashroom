@@ -1,0 +1,38 @@
+server:
+    http_listen_port: 9080
+    grpc_listen_port: 0
+
+positions:
+    filename: /tmp/positions.yaml
+
+clients:
+    -   url: http://loki:3100/loki/api/v1/push
+
+scrape_configs:
+    -   job_name: mashroom_logs
+        static_configs:
+            - labels:
+                  service: mashroom
+                  node: '1'
+                  __path__: /var/log/mashroom/node1/*.log
+            - labels:
+                  service: mashroom
+                  node: '2'
+                  __path__: /var/log/mashroom/node2/*.log
+            - labels:
+                  service: mashroom
+                  node: '3'
+                  __path__: /var/log/mashroom/node3/*.log
+        pipeline_stages:
+            - match:
+                selector: '{service="mashroom"}'
+                stages:
+                    - json:
+                        expressions:
+                            category:
+                            level:
+                            appName:
+                    - labels:
+                        category:
+                        level:
+                        appName:

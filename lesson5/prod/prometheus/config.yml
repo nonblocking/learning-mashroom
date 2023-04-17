@@ -1,0 +1,25 @@
+global:
+    scrape_interval: 15s
+    evaluation_interval: 15s
+
+scrape_configs:
+    -   job_name: 'prometheus'
+        scrape_interval: 10s
+        static_configs:
+            -   targets: [ 'localhost:9090' ]
+    -   job_name: 'mashroom'
+        scrape_interval: 10s
+        static_configs:
+            -   targets: [ 'mashroom1:8080' ]
+                labels:
+                    service: 'Mashroom'
+                    node: '1'
+            -   targets: [ 'mashroom2:8080' ]
+                labels:
+                    service: 'Mashroom'
+                    node: '2'
+            -   targets: [ 'mashroom3:8080' ]
+                labels:
+                    service: 'Mashroom'
+                    node: '3'
+
