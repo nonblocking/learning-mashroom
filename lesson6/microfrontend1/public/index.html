@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='stylesheet' href='/build/bundle.css'>
+
+	<script defer src='/build/bundle.js'></script>
+</head>
+
+<body>
+    <div id="microfrontend-host"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const appSetup = {
+                appConfig: {
+                    name: 'world'
+                },
+                proxyPaths: {
+                    api: '/api'
+                }
+            }
+            const host = document.getElementById('microfrontend-host');
+            window.startMicrofrontendLesson6(host, appSetup);
+        });
+    </script>
+</body>
+</html>

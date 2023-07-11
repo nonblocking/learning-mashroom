@@ -1,0 +1,39 @@
+{
+    "name": "learning-mashroom-leasson6",
+    "private": true,
+    "workspaces": ["./packages/*"],
+    "dependencies": {
+        "ts-node": "^10.9.1",
+        "@mashroom/mashroom": "^2.4.2",
+        "@mashroom/mashroom-docs-static": "^2.4.2",
+        "@mashroom/mashroom-security": "^2.4.2",
+        "@mashroom/mashroom-security-provider-simple": "^2.4.2",
+        "@mashroom/mashroom-security-default-login-webapp": "^2.4.2",
+        "@mashroom/mashroom-storage": "^2.4.2",
+        "@mashroom/mashroom-storage-provider-filestore": "^2.4.2",
+        "@mashroom/mashroom-session": "^2.4.2",
+        "@mashroom/mashroom-i18n": "^2.4.2",
+        "@mashroom/mashroom-browser-cache": "^2.4.2",
+        "@mashroom/mashroom-monitoring-metrics-collector": "^2.4.2",
+        "@mashroom/mashroom-monitoring-prometheus-exporter": "^2.4.2",
+        "@mashroom/mashroom-http-proxy": "^2.4.2",
+        "@mashroom/mashroom-json-schemas": "^2.4.2",
+        "@mashroom/mashroom-portal": "^2.4.2",
+        "@mashroom/mashroom-portal-admin-app": "^2.4.2",
+        "@mashroom/mashroom-portal-default-layouts": "^2.4.2",
+        "@mashroom/mashroom-portal-default-theme": "^2.4.2",
+        "@mashroom/mashroom-portal-sandbox-app": "^2.4.2",
+        "@mashroom/mashroom-portal-demo-angular-app": "^2.4.2",
+        "@mashroom/mashroom-portal-demo-react-app2": "^2.4.2",
+        "@mashroom/mashroom-portal-demo-vue-app": "^2.4.2",
+
+        "@mashroom/mashroom-background-jobs": "^2.4.2",
+        "@mashroom/mashroom-portal-remote-app-registry": "^2.4.2",
+
+        "@mashroom/mashroom-http-proxy-add-user-headers": "^2.4.2"
+    },
+    "scripts": {
+        "start": "ts-node ./node_modules/.bin/mashroom",
+        "check": "tsc --noEmit"
+    }
+}

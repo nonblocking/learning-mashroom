@@ -17,7 +17,6 @@ lesson4/packages/plugin2/public/*.css*
 lesson4/packages/plugin4/build
 lesson5/packages/plugin2/public/*.css*
 lesson5/packages/plugin4/build
-
-
-
-
+lesson6/portal/data
+lesson6/microfrontend1/kubernetes/resources.yaml
+lesson6/microfrontend1/public/build

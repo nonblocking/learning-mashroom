@@ -1,0 +1,38 @@
+{
+    "$schema": "./node_modules/@mashroom/mashroom-json-schemas/schemas/mashroom-plugins.json",
+    "plugins": [
+        {
+            "name": "Microfrontend Lesson 6",
+            "type": "portal-app2",
+            "clientBootstrap": "startMicrofrontendLesson6",
+            "resources": {
+                "js": [
+                    "bundle.js"
+                ],
+                "css": [
+                    "bundle.css"
+                ]
+            },
+            "local": {
+                "resourcesRoot": "./public/build"
+            },
+            "remote": {
+                "resourcesRoot": "/build"
+            },
+            "defaultConfig": {
+                "rolePermissions": {
+                    "canDoEverything": ["Role1", "Administrator"]
+                },
+                "proxies": {
+                    "api": {
+                        "targetUri": "http://localhost:8888/api",
+                        "sendPermissionsHeader": true
+                    }
+                },
+                "appConfig": {
+                    "name": null
+                }
+            }
+        }
+    ]
+}
